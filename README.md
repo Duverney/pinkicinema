@@ -4,6 +4,7 @@ Aplicación en React Native siguiendo el tutorial https://rationalappdev.com/mov
 Basado en https://rationalappdev.com/movie-tickets-booking-app-with-react-native/
 
 Gracias al autor original por compartir su conocimiento
+
 Thanks to the original author for sharing his knowledge
 
 
