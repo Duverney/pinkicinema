@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 
 import { defaultStyles } from './styles';
+import Options from './Options'
 
 // Get screen dimensions
 const { width, height } = Dimensions.get('window');
@@ -68,7 +69,7 @@ export default class MoviePopup extends Component {
 
                 // Animate heigh change so it looks smooth
                 // Anima el cambio de altura para que luzca suave
-                LayoutAnimation.easeInEaseOut();
+                //LayoutAnimation.easeInEaseOut();
 
                 // Switch to expanded mode if popup pulled up above 80% mark
                 // Cambie al modo expandido si la ventana emergente se detuvo por encima del 80%
@@ -184,7 +185,6 @@ export default class MoviePopup extends Component {
         };
     }
 
-
     render() {
         const {
             movie,
@@ -194,7 +194,6 @@ export default class MoviePopup extends Component {
             onChooseTime,
             onBook
         } = this.props;
-
 
         // Pull out movie data - Extrae los datos de la película
         const { title, genre, poster, days, times } = movie || {};
@@ -231,19 +230,17 @@ export default class MoviePopup extends Component {
                             {/* Day */}
                             <Text style={styles.sectionHeader}>Day</Text>
                             {/* TODO: Add day options here */}
-                            <Text>Add day options here</Text>
+                            <Options values={days} chosen={chosenDay} onChoose={onChooseDay}
+                            />
                             {/* Time */}
                             <Text style={styles.sectionHeader}>Showtime</Text>
                             {/* TODO: Add show time options here */}
-                            <Text>Add show time options here</Text>
+                            <Options values={times} chosen={chosenTime} onChoose={onChooseTime}
+                            />
                         </View>
                         {/* Footer */}
                         <View style={styles.footer}>
-                            <TouchableHighlight
-                                underlayColor="#9575CD"
-                                style={styles.buttonContainer}
-                                onPress={onBook}
-                            >
+                            <TouchableHighlight underlayColor="#9575CD" style={styles.buttonContainer} onPress={() => onBook('')}>
                                 <Text style={styles.button}>Book My Tickets</Text>
                             </TouchableHighlight>
                         </View>
@@ -253,7 +250,6 @@ export default class MoviePopup extends Component {
         );
     }
 }
-
 const styles = StyleSheet.create({
     // Main container
     container: {
