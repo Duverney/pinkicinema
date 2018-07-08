@@ -2,12 +2,11 @@
 Aplicación en React Native siguiendo el tutorial https://rationalappdev.com/movie-tickets-booking-app-with-react-native/
 #
 Basado en https://rationalappdev.com/movie-tickets-booking-app-with-react-native/
-#
+
 Thanks to the original author for sharing his knowledge
-#
 Thanks to the original author
-#
-#
+
+
 Y el resultado es:
 #
 <p align="center">
