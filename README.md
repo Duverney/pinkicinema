@@ -8,7 +8,7 @@ Thanks to the original author
 
 
 Y el resultado es:
-#
+
 <p align="center">
   <img src="https://github.com/Duverney/pinkicinema/blob/master/1.png" width="350" title="Movie view">
   <img src="https://github.com/Duverney/pinkicinema/blob/master/2.png" width="350" title="Movie - MoviePopup view">
