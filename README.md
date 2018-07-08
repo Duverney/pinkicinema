@@ -2,11 +2,14 @@
 Aplicación en React Native siguiendo el tutorial https://rationalappdev.com/movie-tickets-booking-app-with-react-native/
 #
 Basado en https://rationalappdev.com/movie-tickets-booking-app-with-react-native/
+#
 Thanks to the original author for sharing his knowledge
+#
 Thanks to the original author
-
+#
+#
 Y el resultado es:
-
+#
 <p align="center">
   <img src="https://github.com/Duverney/pinkicinema/blob/master/1.png" width="350" title="Movie view">
   <img src="https://github.com/Duverney/pinkicinema/blob/master/2.png" width="350" title="Movie - MoviePopup view">
